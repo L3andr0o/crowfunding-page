@@ -1,0 +1,118 @@
+.mc__third{
+    height: 68%;
+    padding: 20px;
+    box-shadow: 1px 0px 5px #aaa;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    @media (min-width:768px){
+        padding: 40px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+            @media (min-width:768px){
+                height: fit-content;
+        }
+        h2{
+            font-size: 18px;
+            padding: 10px 0;
+            @media (min-width:768px){
+                font-size: 20px;
+        }
+        }
+        p{
+            font-size: 11.5px;
+            color: #999;
+            @media (min-width:768px){
+                font-size: 16px;
+                height: fit-content;
+                margin-top: 10px;
+        }
+        }
+    }
+    .stand{
+        width: 100%;
+        padding: 15px;
+        box-shadow: 1px 0px 5px #aaa;
+        height: 18em;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        @media (min-width:768px){
+           padding: 30px;
+           min-height: 15em;
+           height: fit-content;
+    }
+        h3{
+            font-size: 16px;
+            position: relative;
+            @media (min-width:768px){
+            font-size: 18px;
+        }
+        }
+        h4{
+            font-size: 14px;
+            color: hsl(176, 50%, 47%);
+            font-weight:500;
+            position: absolute;
+            top: 40px;
+            @media (min-width:768px){
+            top: 30px;
+            right: 30px;   
+            font-size: 16px;    
+        }
+        }
+        p{
+            font-size: 12.5px;
+            color: #999;
+            margin-top: 10px;
+            @media (min-width:768px){
+                font-size: 17.8px;
+                margin-top: 0;
+        }
+        }
+        .number-left{
+            font-size: 22px;
+            font-weight: 700;
+            @media (min-width:768px){
+                font-size: 26px;
+        }
+        }
+        .span{
+            font-size: 12px;
+            font-weight: 400;
+            color: #999;
+            @media (min-width:768px){
+                font-size: 16px;
+        }
+        }
+        button{
+            width: 60%;
+            background-color: hsl(176, 50%, 47%);
+            border: none;
+            outline: none;
+            height: 3em;
+            color: #fff;
+            border-radius: 25px;
+            font-size: 12px;
+            cursor: pointer;
+            @media (min-width:768px){
+                position: absolute;
+                bottom: 30px;
+                right: 30px;
+                width: 25%;
+                height: 3.5em;
+                transition: background-color .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        }
+        button:hover{
+            background-color: hsl(176, 51%, 26%) ;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.main-component{
+    width: 100%;
+    position: relative;
+    align-items: center;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    z-index: 200;
+    max-width: 320px;
+    padding: 0 22px;
+    justify-content: space-between;
+    height: 115em;
+    margin: -80px auto;
+    @media (min-width:768px){
+        min-width: 60%;
+    }
+    .mc__first{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 50px 20px 20px 20px;
+    height: 14em;
+    box-shadow: 1px 0px 10px #888;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (min-width:768px){
+        padding: 50px 40px 40px 40px
+    }
+    .mc__first-logo{
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: -28px;
+        text-align: center;
+        height: 56px;
+        img{
+            height: 100%;
+        }
+    }
+    h1{
+        font-size: 18px;
+        @media (min-width:768px){
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+    p{
+        font-size:12px;
+        color: hsl(0, 0%, 48%);
+        @media (min-width:768px){
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    }
+    .mc__first-buttons{
+        width: 100%;
+        display: flex;
+        height: 3em;
+        justify-content: space-between;
+        @media (min-width:768px){
+            justify-content: space-between;
+        }
+        .f-btn{
+            width: 75%;
+            padding: 0 10px;
+            color: #fff;
+            background-color: hsl(176, 50%, 47%);
+            border: none;
+            outline: none;
+            border-radius: 25px;
+            cursor: pointer;
+            user-select: none;
+            @media (min-width:768px){
+                width: 30%;
+                max-width: 15em;
+                transition: background-color .2s cubic-bezier(0.23, 1, 0.320, 1);
+            }
+        }
+        .f-btn:hover{
+            background-color:hsl(176, 51%, 26%) ;
+        }
+        .bookmark{
+            height: 100%;
+            width: 22%;
+            @media (min-width:768px){
+                width: 25%;
+                background-color: #ccc;
+                border-radius: 55px;
+                text-align: left;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+            }
+            img{
+                height: 100%;
+                width: 100%;
+                @media (min-width:768px){
+                    width: 30%;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+            span{
+                display: none;
+                @media (min-width:768px){
+                    color: #777;
+                    display: inline-block;
+                    font-weight: 700;
+                    margin-left: 60px;               }
+            }
+        }
+    }
+}
+}

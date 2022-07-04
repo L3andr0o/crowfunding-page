@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&family=Commissioner:wght@400;500;700&family=Kumbh+Sans:wght@400;700&family=Manrope:wght@500;700&family=Open+Sans:wght@400;700&family=Poppins:wght@400;500;600;700&family=Raleway&family=Space+Mono:wght@400;700&display=swap');
+
+
+*:not(i),*::after:not(i),*::before:not(i){
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Commissioner', sans-serif;
+}
+body{
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    background-color: rgb(240, 239, 239);
+    height: 132em
+}
+@import "top-and-navbar";
+@import "first-div";
+@import "second-div";
+@import "third-div";
+@import "modal";
+@import "thanks";
+
+.appear{
+    display: block !important;
+    animation-name: appear;
+    animation-duration: .2s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-fill-mode: both;
+}
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.borderGreen{
+    border: 2px solid hsl(176, 50%, 47%) !important;
+    box-shadow: none !important;
+}
+.hide{
+    display: none !important;
+}
+.dark{
+    background-color: rgba(0, 0, 0, 0.459) !important;
+    display: block !important;
+}
+.dark-background{
+    height: 132em;
+    z-index: 300;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+.outStock{
+    pointer-events: none !important;
+    opacity: .4 !important;
+    user-select: none !important;
+}

@@ -1,0 +1,254 @@
+.modal-background{
+    width: 100%;
+    height: 132em;
+    background-color: rgba(0, 0, 0, 0.459);
+    position: absolute;
+    top: 0;
+    padding: 15px;
+    display: none;
+    z-index: 200;
+    .modal{
+        background-color: #fff;
+        position: relative;
+        margin: 10em auto;
+        border-radius: 5px;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: fit-content;
+        z-index: 250;
+        max-width: 320px;
+        @media (min-width:768px){
+            min-width: 48em;
+            width: 58%;
+            padding:50px 30px;
+    }
+        .close-modal{
+            position: absolute;
+            right: 15px;
+            cursor: pointer;
+            @media (min-width:768px){
+                top: 30px;
+                right: 30px;
+                font-size: 22px;
+                color: #ccc;
+                transition: color .2s cubic-bezier(0.86, 0, 0.07, 1);
+        }
+    }   
+        .close-modal:hover{
+            color:#000;
+        }
+        .title{
+            height: 4.5em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h2{
+                font-size: 18px;
+                @media (min-width:768px){
+                    font-size: 24px;
+            }
+            }
+            p{
+                font-size: 13px;
+                color: #999;
+                @media (min-width:768px){
+                    font-size: 18px;
+            }
+            }
+        }
+
+        .modal-content{
+            box-shadow: 1px 0px 5px #ccc;
+            padding:15px;
+            height: fit-content;
+            min-height: 10em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 5px;
+            margin: 20px 0;
+            position: relative;
+            @media (min-width:768px){
+                padding: 40px 30px 20px 30px; 
+        }
+            .div-title{
+                position: relative;
+                @media (min-width:768px){
+                display: flex;
+                align-items: center;
+                }
+                .radio{
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    top: 8.5px;
+                    border: 1px solid #999;
+                    border-radius: 50%;
+                    padding: 2px;
+                    @media (min-width:768px){
+                        top: 0;
+                    }
+                    .radio-content{
+                        background-color: #0c3ccf;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        display: none;
+                    }
+                }
+                .radio1{
+                    top: 0;
+                }
+                .label{
+                    font-weight: 700;
+                    margin-left: 30px;
+                    font-size: 15px;
+                    @media (min-width:768px){
+                        font-size: 18px;
+                        margin-left: 50px;
+                        transition: color .2s cubic-bezier(0.47, 0, 0.745, 0.715);
+                        cursor: pointer;
+                    }
+                }
+                .label:hover{
+                    color:hsl(176, 50%, 47%);
+                }
+                h4{
+                    margin-left: 30px;
+                    font-size: 12.5px;
+                    color: hsl(176, 50%, 47%);
+                    @media (min-width:768px){
+                        font-size: 14.5px;
+                    }
+                }
+            }
+            p{
+                font-size: 14px;
+                color: #999;
+                margin-top: 20px;
+                @media (min-width:768px){
+                font-size: 17px;
+                margin-top: 12px;
+                margin-left: 50px;
+                }
+            }
+            .modal-spans{
+                margin: 15px 0;
+                @media (min-width:768px){
+                position: absolute;
+                top: 14px;
+                right: 30px;
+                }
+            }
+                .number{
+                    font-size: 14px;
+                    font-weight: 700;
+                    @media (min-width:768px){
+                        font-size: 18px;
+                    }   
+                }
+                .left{
+                    font-weight: 400;
+                    color: #999;
+                }
+            .crow-modal::before{
+                width: 112%;
+                border: .5px solid rgb(238, 235, 235);
+                content: "";
+                height: .1px;
+                left:-6%;
+                top: 0;
+                position: absolute;
+                @media (min-width:768px){
+                    width: 109.3%;
+                    top: 0px;
+                    left: -4.5%;
+                }
+            }
+            .crow-modal{
+                text-align: center;
+                min-height: 5em;
+                height: fit-content;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-top: 0px;
+                display: none;
+                padding: 10px;
+                @media (min-width:768px){
+                    margin-top: 20px;
+                    flex-direction: row;
+                }
+                h4{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #999;
+                    @media (min-width:768px){
+                    position: absolute;
+                    top: 30px;
+                    left: 0;
+                    font-size: 16px;
+                    }
+                }
+                .btn-n-input{
+                    display: flex;
+                    justify-content: space-evenly;
+                    position: relative;
+                    margin-top: 10px;
+                    @media (min-width:768px){
+                    width: 30%;
+                    justify-content: space-between;
+                    position: absolute;
+                    right: 0;
+                    height: 2.5em;
+                    }
+                    input{
+                        position: relative;
+                        width: 35%;
+                        padding: 7px 24px;
+                        text-align: center;
+                        outline: none;
+                        border-radius: 20px;
+                        border: .2px solid #ccc;
+                        @media (min-width:768px){
+                            width: 45%;
+                        }
+                    }
+                    button:hover{
+                        background-color:hsl(176, 51%, 26%)  ;
+                    }
+                    button{
+                        width: 45%;
+                        border: none;
+                        outline: none;
+                        border-radius: 20px;
+                        background-color: hsl(176, 50%, 47%);
+                        color: #fff;
+                        font-weight: 500;
+                        cursor:pointer;
+                        @media (min-width:768px){
+                            width: 50%;
+                            transition: background-color .2s ease-in-out;
+                        }
+                    }
+                }
+                .btn-n-input::after{
+                    content: '$';
+                    z-index: 300;
+                    position: absolute;
+                    left: 28px;
+                    font-size: 14px;
+                    color: #999;
+                    top: 8px;
+                    @media (min-width:768px){
+                    top: 12px;
+                    left: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.top{
+    height: 18em;
+    width: 100%;
+    background-image: url(../images/image-hero-mobile.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    @media (min-width:768px){
+        background-image: url(../images/image-hero-desktop.jpg);
+    }
+    .navbar{
+        width: 100%;
+        background:linear-gradient(to bottom, #000, rgba(255, 255, 255, 0));
+        padding: 25px 15px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        @media (min-width:768px){
+            padding: 20px 80px ;
+        }
+        .logo{
+            @media (min-width:768px){
+                height: fit-content;
+                align-self: center;
+                width: 7em;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .list-menu{
+            background-color: #fff;
+            position: absolute;
+            width: calc(100% - 30px);
+            left: 15px;
+            top: calc(100% + 27px);
+            z-index: 400;
+            border-radius: 5px;
+            display: none;
+            @media (min-width:768px){
+                display: inline-block;
+                position: relative;
+                width: 100%;
+                background-color: transparent;
+            }
+            img{
+                position: absolute;
+                top: -50%;
+                right: 0;
+                width: 16px;
+                @media (min-width:768px){
+                    display: none;
+                }
+            }
+            li{
+                padding: 15px;
+                font-weight: 600;
+                user-select: none;
+                cursor: pointer;
+                @media (min-width:768px){
+                    display: inline-block;
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #fff; 
+            }
+            
+                }
+            li:hover{
+                text-shadow: 1px 2px 3px #ccc;
+            }
+            li:nth-child(3),li:nth-child(2){
+                border-bottom: 1px solid #ccc;
+                @media (min-width:768px){
+                    border: none;
+                }
+            }
+        }
+        .burger{
+            display: inline-block;
+            @media (min-width:768px){
+                display: none;
+            }
+        }
+    }
+}
